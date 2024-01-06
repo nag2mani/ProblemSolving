@@ -1,9 +1,6 @@
 
 from typing import List
-
-
 class Solution:
-
     def sumOfPowers(self, a: int, b: int) -> int:
         def prime_factors_sum(num, memo = {}):
             if num in memo:
@@ -35,3 +32,8 @@ class Solution:
             total_points += prime_factors_sum(num)
 
         return total_points
+
+
+
+# code (c++) inspired by some other people;
+
