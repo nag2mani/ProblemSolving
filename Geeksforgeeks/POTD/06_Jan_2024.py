@@ -41,7 +41,8 @@ class Solution:
 # public:
 #     int primePowers(int n)
 #     {
-#         int cnt = 0;
+#         int cnt
+#  = 0;
 #         for(int i = 2; i <= sqrt(n); i++)
 #         {
 #             while(n % i == 0)
@@ -66,3 +67,6 @@ class Solution:
 #         return cnt;
 #     }
 # };
+    
+
+    
