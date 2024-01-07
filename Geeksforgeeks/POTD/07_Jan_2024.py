@@ -1,4 +1,4 @@
-#User function Template for python3
+#this question is asked in google.
 
 class Solution:
     def splitArray(self, arr, N, K):
