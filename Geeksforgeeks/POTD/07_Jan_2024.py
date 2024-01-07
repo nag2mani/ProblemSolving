@@ -27,3 +27,5 @@ class Solution:
                 if partitions < 0:
                     return False
         return True
+
+#finished
