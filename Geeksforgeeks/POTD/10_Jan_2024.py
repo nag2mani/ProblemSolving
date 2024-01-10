@@ -1,11 +1,8 @@
 #User function Template for python3
 class Solution:
     def longSubarrWthSumDivByK(self, arr, n, K):
-        # Create a dictionary to store the remainder of cumulative sum
-        # and its corresponding index
         remainder_dict = {0: -1}
-        
-        # Initialize variables to store cumulative sum and max length
+
         cum_sum = 0
         max_length = 0
         
