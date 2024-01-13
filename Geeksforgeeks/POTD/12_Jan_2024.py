@@ -1,5 +1,10 @@
 from queue import Queue
 
+# There are some other module for queue problem
+from queue import PriorityQueue
+from queue import LifoQueue
+from queue import SimpleQueue
+
 class Solution:
     def modifyQueue(self, q, k):
         # Create a temporary stack to store the first k elements
