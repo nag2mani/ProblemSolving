@@ -1,0 +1,1 @@
+Search Pattern (KMP-Algorithm).

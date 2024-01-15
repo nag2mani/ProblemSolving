@@ -1,0 +1,4 @@
+Source: https://youtube.com/playlist?list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&si=zaprIAvfqVFROWqX
+
+Tabulation: bottom up
+memorization: topdown
