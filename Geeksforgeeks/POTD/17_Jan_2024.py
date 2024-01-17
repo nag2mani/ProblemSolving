@@ -1,1 +1,6 @@
-# Your Python code here
+from itertools import permutations
+
+class Solution:
+    def uniquePerms(self, arr, n):
+        r = set(permutations(arr))
+        return sorted(list(r))
