@@ -2,6 +2,9 @@
 
 class Solution:
     def min_sprinklers(self, gallery, n):
+        
+        #Try to find the range of every sprinkler and then leftmost then rightmost.
+
         n = len(gallery)
         
         # Create a list of ranges
