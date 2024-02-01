@@ -1,2 +1,3 @@
 @cache ; It will reduce your run time put this after class solution.
 [] is False; You can use it in if condition when use stack.
+Maximum diffrence of a sorted array is diffrence between first and last element.(not much good ?)
