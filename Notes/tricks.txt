@@ -1,3 +1,10 @@
 @cache ; It will reduce your run time put this after class solution.
 [] is False; You can use it in if condition when use stack.
 Maximum diffrence of a sorted array is diffrence between first and last element.(not much good ?)
+
+In Python, the or operator returns the first operand if it is true, and the second operand otherwise. If both operands are true, it returns the first operand.
+example;
+list1 = []
+list2 = [1, 5, 9]
+result = list1 or list2
+It will return list2 because it is not false.

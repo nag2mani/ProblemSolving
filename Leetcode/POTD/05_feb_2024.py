@@ -10,3 +10,5 @@ class Solution:
 class Solution:
     def firstUniqChar(self, s: str) -> int:
         return min([s.index(char) for char in set(s) if s.count(char) == 1] or [-1])
+
+
