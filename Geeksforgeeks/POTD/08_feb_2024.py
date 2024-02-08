@@ -1,4 +1,5 @@
 # Using queue
+from collections import deque
 
 class Solution:
     #Your task is to complete this function
