@@ -1,5 +1,6 @@
+
 class Solution:
-    def largestDivisibleSubset(self, nums: List[int]) -> List[int]:
+    def largestDivisibleSubset(self, nums):
         if not nums:
             return []
 
