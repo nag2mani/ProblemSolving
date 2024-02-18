@@ -34,7 +34,6 @@ class Solution:
 
 
 #Good solution;
-
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         dummy = ListNode()
