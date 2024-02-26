@@ -10,9 +10,9 @@ class Solution:
 		return a
 
 
-# sol = Solution()
-# s = 'abc'
-# print(sol.AllPossibleStrings(s))
+sol = Solution()
+s = 'abc'
+print(sol.AllPossibleStrings(s))
 
 
 print(list(permutations('ABCD',2)))
