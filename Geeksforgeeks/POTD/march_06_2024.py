@@ -18,3 +18,18 @@ class Solution:
 # Other Solution using Rabin Karp Algorithm.
 class Solution:
     def search(self, pattern, text):
+        i=0
+        j=0
+        s=""
+        a=[]
+        while i<len(text):
+            s+=text[i]
+            if s==pattern:
+                a.append(j+1)
+            if len(s) >= len(pattern) :
+                s=s[1:]
+                j+=1
+            i+=1
+        return a
+    
+    
