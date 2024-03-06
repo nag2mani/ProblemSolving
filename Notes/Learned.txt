@@ -1,1 +1,2 @@
 Search Pattern (KMP-Algorithm).
+Search Pattern in string (Rabin-Karp Algorithm).
