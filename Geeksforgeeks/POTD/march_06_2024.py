@@ -22,8 +22,8 @@ class Solution:
         j=0
         s=""
         a=[]
-        while i<len(text):
-            s+=text[i]
+        while i < len(text):
+            s = s + text[i]
             if s==pattern:
                 a.append(j+1)
             if len(s) >= len(pattern) :
@@ -31,5 +31,4 @@ class Solution:
                 j+=1
             i+=1
         return a
-    
     
