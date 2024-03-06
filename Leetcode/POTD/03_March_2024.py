@@ -1,10 +1,25 @@
 # 01 March 2024
+class Solution:
+    def maximumOddBinaryNumber(self, s):
+        n = len(s)
+        no_of_one = s.count('1')
+        if no_of_one == 1:
+            return (n-1) * '0' + '1'
+        else:
+            return (no_of_one-1) * '1' + (n - no_of_one) * '0' + '1'
+
 
 
 # 02 March 2024
+class Solution:
+    def sortedSquares(self, nums):
+        squares = [num * num for num in nums]
+        squares.sort()
+        return squares
 
 
 # 03 March 2024
+
 
 
 # 04 March 2024
