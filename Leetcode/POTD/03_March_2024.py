@@ -103,7 +103,7 @@ class Solution:
 
 # 07 March 2024
 class Solution:
-    def middleNode(self, head)
+    def middleNode(self, head):
         fast, slow = head , head
         while fast is not None and fast.next is not None:
             slow = slow.next
@@ -112,4 +112,14 @@ class Solution:
 
 
 
-
+# 08 March 2024
+from collections import Counter
+class Solution:
+    def maxFrequencyElements(self, nums):
+        freq = Counter(nums)
+        maxx = max([i for i in freq.values()])
+        result = 0
+        for j in freq:
+            if freq[j] == maxx:
+                result += maxx
+        return result
