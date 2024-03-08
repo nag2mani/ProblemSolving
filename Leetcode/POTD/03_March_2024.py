@@ -116,6 +116,7 @@ class Solution:
 from collections import Counter
 class Solution:
     def maxFrequencyElements(self, nums):
+        # It will give dict with the frequency of every unique term.
         freq = Counter(nums)
         maxx = max([i for i in freq.values()])
         result = 0
@@ -123,3 +124,8 @@ class Solution:
             if freq[j] == maxx:
                 result += maxx
         return result
+
+
+
+
+# 09 March 2024
