@@ -130,7 +130,7 @@ class Solution:
 
 # 09 March 2024
 class Solution:
-    def getCommon(self, nums1: List[int], nums2: List[int]) -> int:
+    def getCommon(self, nums1, nums2):
         i=j=0
         num1 = nums1
         num2 = nums2
@@ -142,3 +142,4 @@ class Solution:
             else:
                 return num1[i]
         return -1
+
