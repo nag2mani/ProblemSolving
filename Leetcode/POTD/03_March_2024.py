@@ -25,6 +25,8 @@ class ListNode:
         self.val = val
         self.next = next
 
+
+
 class Solution:
     def removeNthFromEnd(self, head, n):
         nd = ListNode(0)
@@ -142,6 +144,7 @@ class Solution:
             else:
                 return num1[i]
         return -1
+
 
 
 # 10 March 2024
