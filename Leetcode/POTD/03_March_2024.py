@@ -129,3 +129,16 @@ class Solution:
 
 
 # 09 March 2024
+class Solution:
+    def getCommon(self, nums1: List[int], nums2: List[int]) -> int:
+        i=j=0
+        num1 = nums1
+        num2 = nums2
+        while i < len(num1) and j < len(num2):
+            if num1[i] > num2[j]:
+                j = j + 1
+            elif num1[i] < num2[j]:
+                i = i + 1
+            else:
+                return num1[i]
+        return -1
