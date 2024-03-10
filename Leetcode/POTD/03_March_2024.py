@@ -159,4 +159,9 @@ class Solution:
         return s
 
 # Other solution using Symmetric Difference between Two Sets
+class Solution:
+    def intersection(self, nums1, nums2):
+        x = set(nums1)
+        y = set(nums2)
+        return list(y-(y-x))
 
