@@ -149,5 +149,14 @@ class Solution:
 
 # 10 March 2024
 
+#My solution
+class Solution:
+    def intersection(self, nums1, nums2):
+        s = set()
+        for i in nums1:
+            if i in nums2:
+                s.add(i)
+        return s
 
+# Other solution using Symmetric Difference between Two Sets
 
