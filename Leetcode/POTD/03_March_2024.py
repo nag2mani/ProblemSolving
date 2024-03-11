@@ -189,3 +189,23 @@ class Solution:
                 j[1] = n-1
         return count
 
+#Optimise solution;
+class Solution:
+	def countPairs(self, mat1, mat2, n, x):
+        s = set(j for i in mat1 for j in i)
+        return sum(1 for i in mat2 for j in i if x - j in s)
+    
+
+
+# 12 March 2024
+    
+
+
+
+
+
+
+
+
+
+    
