@@ -43,8 +43,8 @@ def Latest_start_time_first(lst):
 def main():
     lst1 = [(1, 4), (3, 5), (0, 6), (5, 7), (3, 8), (5, 9), (6, 10), (8, 11), (8, 12), (2, 13), (12, 14)]
     lst2 = [(1,4), (4, 5), (0,6), (5,7), (8, 9)]
-    print(Earliest_finish_time_first(lst2))
-    print(Latest_start_time_first(lst2))
+    print(Earliest_finish_time_first(lst1))
+    print(Latest_start_time_first(lst1))
 
 
 main()
