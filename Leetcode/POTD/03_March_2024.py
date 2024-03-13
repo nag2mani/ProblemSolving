@@ -199,13 +199,34 @@ class Solution:
 
 # 12 March 2024
     
-
-
-
-
-
-
-
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def removeZeroSumSublists(self, head):
+        #done by other
+        node = head
+        sum_ , res = 0, {}
+        while node:
+            sum_ += node.val
+            if sum_ == 0:
+                head = node.next
+                res = {}
+            else:
+                if res.get(sum_):
+                    temp = res[sum_].next
+                    current_sum = sum_
+                    while temp != node:
+                        current_sum += temp.val
+                        del res[current_sum]
+                        temp = temp.next
+                    res[sum_].next = node.next
+                else:
+                    res[sum_] = node
+            node = node.next
+        return head
 
 
 
