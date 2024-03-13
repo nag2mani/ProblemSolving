@@ -15,7 +15,6 @@ Output: Maximum sized set of non-conflicting activities that may be scheduled.
 def Earliest_finish_time_first(lst):
     # Sorted list on the basis of Earliest Finish time earlier (Left to right sweep).
     k = sorted(lst, key=lambda x: x[1])
-
     candidate_list = []
     prev_finish_time = 0
     for i in k:
@@ -29,7 +28,6 @@ def Earliest_finish_time_first(lst):
 def Latest_start_time_first(lst):
     # Sorted list on the basis of Latest Start time First or decreasing start time (right to left sweep).
     kp = sorted(lst, key=lambda x: x[0], reverse = True)
-
     candidate_list = []
     latest_start_time = float("inf")
     for i in kp:
