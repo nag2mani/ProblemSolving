@@ -220,7 +220,11 @@ class Solution:
             if sum(nums[:i]) == sum(nums[i-1:]):
                 return i
         return -1
-
+    
+        # # by other;
+        # x = math.sqrt(n*(n+1)/2)
+        # converted = int(x)
+        # return converted if converted == x else -1
 
 
 
