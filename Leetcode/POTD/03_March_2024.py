@@ -287,3 +287,18 @@ class Solution:
         return answer
 
 
+
+
+# 16 March 2024
+class Solution:
+    def findMaxLength(self, nums):
+        n = len(nums); count = 0; arr = [-2] * (2 * len(nums) + 1); arr[n] = -1; maxlen = 0
+        for i in range(n):
+            count = count + 1 if nums[i] == 1 else count - 1
+            if arr[count+n] >= -1:
+                maxlen = max(maxlen, i-arr[count+n])
+            else:
+                arr[count+n] = i
+        return maxlen
+
+
