@@ -250,10 +250,24 @@ class Solution:
 
 
 # 14 March 2024
+from collections import defaultdict
+class Solution:
+    def numSubarraysWithSum(self, nums, goal):
+        myDict = defaultdict(int)
+        myDict[0] = 1
+        result = curr = 0
+        
+        for num in nums:
+            curr = curr + num
+            if curr - goal in myDict:
+                result = result + myDict[curr - goal]
+                print(result)
+            myDict[curr] = myDict[curr] + 1
+            print(myDict)
+
+        return result
 
 
 
 
 
-
-    
