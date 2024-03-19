@@ -158,6 +158,8 @@ class Solution:
                 s.add(i)
         return s
 
+
+
 # Other solution using Symmetric Difference between Two Sets
 class Solution:
     def intersection(self, nums1, nums2):
@@ -188,6 +190,8 @@ class Solution:
                 j[0] -=1 
                 j[1] = n-1
         return count
+
+
 
 #Optimise solution;
 class Solution:
@@ -300,5 +304,6 @@ class Solution:
             else:
                 arr[count+n] = i
         return maxlen
+
 
 
