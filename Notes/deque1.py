@@ -18,7 +18,7 @@ print(dq)
 dq.rotate(2)
 print(dq)
 
-
+dq.extend(["kk", "Ang"])
 # dq.rotate()
 # dq.remove()
 # dq.appendleft()
