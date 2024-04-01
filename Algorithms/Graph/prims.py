@@ -1,5 +1,4 @@
 import sys
-
 class Graph:
     def __init__(self, vertices):
         self.V = vertices
@@ -43,16 +42,27 @@ class Graph:
 
 
 # Example usage:
-g = Graph(5)
+g = Graph(4)
+# g.add_edge('A', 'B', 2)
+# g.add_edge('B', 'A', 2)
+# g.add_edge('B', 'C', 1)
+# g.add_edge('C', 'B', 1)
+# g.add_edge('C', 'D', 1)
+# g.add_edge('D', 'C', 1)
+# g.add_edge('D', 'A', 5)
+# g.add_edge('A', 'D', 5)
+# g.add_edge('B', 'D', 3)
+# g.add_edge('D', 'B', 3)
+
 g.add_edge(0, 1, 2)
-g.add_edge(0, 3, 6)
-g.add_edge(1, 2, 3)
-g.add_edge(1, 3, 8)
-g.add_edge(1, 4, 5)
-g.add_edge(2, 4, 7)
-g.add_edge(3, 4, 9)
-
+g.add_edge(1, 0, 2)
+g.add_edge(1, 2, 1)
+g.add_edge(2, 1, 1)
+g.add_edge(2, 3, 1)
+g.add_edge(3, 2, 1)
+g.add_edge(3, 0, 5)
+g.add_edge(0, 3, 5)
+g.add_edge(1, 3, 3)
+g.add_edge(3, 1, 3)
 g.prim_mst()
-
-
-
+# print(sys.maxsize)
