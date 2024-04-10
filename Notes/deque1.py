@@ -28,3 +28,5 @@ dq.extend(["kk", "Ang"])
 # dq.clear()
 
 print(dq)
+s = [4,5,2,1]
+print(sorted(s))
