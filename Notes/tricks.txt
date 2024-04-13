@@ -9,11 +9,10 @@ list2 = [1, 5, 9]
 result = list1 or list2
 It will return list2 because it is not false.
 
-
 floor = 3//2
 ceil = -(-3//2)
 
-
+The total number of subarrays in an array of size N is N * (N + 1) / 2
 
 
 
