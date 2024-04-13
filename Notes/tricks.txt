@@ -12,7 +12,8 @@ It will return list2 because it is not false.
 floor = 3//2
 ceil = -(-3//2)
 
-The total number of subarrays in an array of size N is N * (N + 1) / 2
+The total number of subarrays in an array of size N is N * (N + 1) / 2.
+When you do multiple & then value decreases or stay constant not increases.
 
 
 
