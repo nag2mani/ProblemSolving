@@ -4,6 +4,9 @@ visited_list = []
 
 def dfs(node):
     if node not in visited_list:
+        print(node, end=" ")
         visited_list.append(node)
         for i in adjacency_list[node]:
             dfs(i)
+
+dfs('Frankfurt')
