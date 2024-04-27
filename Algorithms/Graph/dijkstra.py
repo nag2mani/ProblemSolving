@@ -1,44 +1,47 @@
-import heapq
+# Library for INT_MAX
+import sys
 
-def dijkstra(graph, source):
-    # Initialize distances to all vertices as infinity
-    distances = {vertex: float('infinity') for vertex in graph}
-    distances[source] = 0  # Distance from source to source is 0
+class Graph():
 
-    # Priority queue to store vertices with their current distances from the source
-    priority_queue = [(0, source)]
+	def __init__(self, vertices):
+		self.V = vertices
+		self.graph = [[0 for column in range(vertices)]
+					for row in range(vertices)]
 
-    while priority_queue:
-        current_distance, current_vertex = heapq.heappop(priority_queue)
+	def printSolution(self, dist):
+		print("Vertex 0 is S, 1 is A, 2 is B")
+		for node in range(self.V):
+			print("Distance from Source to", node, "is", dist[node])
 
-        # Ignore this vertex if we have already found a shorter path to it
-        if current_distance > distances[current_vertex]:
-            continue
+	def minDistance(self, dist, sptSet):
 
-        # Update distances to adjacent vertices
-        for neighbor, weight in graph[current_vertex].items():
-            distance = current_distance + weight
-            
-            # If this path is shorter than the current shortest path, update the distance
-            if distance < distances[neighbor]:
-                distances[neighbor] = distance
-                heapq.heappush(priority_queue, (distance, neighbor))
+		min = sys.maxsize
 
-    return distances
+		for v in range(self.V):
+			if dist[v] < min and sptSet[v] == False:
+				min = dist[v]
+				min_index = v
 
+		return min_index
 
+	def dijkstra(self, src):
+		dist = [sys.maxsize] * self.V
+		dist[src] = 0
+		sptSet = [False] * self.V
 
-# graph = {
-#     'A': {'B': 1, 'C': 4},
-#     'B': {'A': 1, 'C': 2, 'D': 5},
-#     'C': {'A': 4, 'B': 2, 'D': 1},
-#     'D': {'B': 5, 'C': 1}
-# }
+		for cout in range(self.V):
+			u = self.minDistance(dist, sptSet)
+			sptSet[u] = True
+			for v in range(self.V):
+				if self.graph[u][v] > 0 and sptSet[v] == False and dist[v] > dist[u] + self.graph[u][v]:
+					dist[v] = dist[u] + self.graph[u][v]
+		self.printSolution(dist)
 
-graph = {
-    'S':{"A":2, "B":1},
-    'A':{"B":-2},
-    'B':{}
-}
-source = "S"
-print(f"From {source} to ", dijkstra(graph, source))
+g = Graph(3)
+g.graph = [
+	[0,2,1],
+	[float('inf'), 0, -2],
+	[float('inf'), float('inf'), 0]
+]
+
+g.dijkstra(0)
