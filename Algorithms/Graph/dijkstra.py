@@ -45,3 +45,5 @@ g.graph = [
 ]
 
 g.dijkstra(0)
+
+

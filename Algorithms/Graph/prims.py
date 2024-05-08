@@ -41,7 +41,6 @@ class Graph:
                     parent[v] = u
         self.print_mst(parent)
 
-
 # Example usage:
 g = Graph(4)
 # g.add_edge('A', 'B', 2)
@@ -66,4 +65,5 @@ g.add_edge(0, 3, 5)
 g.add_edge(1, 3, 3)
 g.add_edge(3, 1, 3)
 g.prim_mst()
+
 # print(sys.maxsize)
