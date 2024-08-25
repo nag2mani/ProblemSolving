@@ -1,12 +1,23 @@
-from typing import List, Optional
+# # Using append
+# list1 = [1, 2, 3]
+# list1.append([4, 5])
+# print(list1)  # Output: [1, 2, 3, [4, 5]]
 
+# # Using extend
+# list2 = [1, 2, 3]
+# list2.extend([4, 5])
+# print(list2)  # Output: [1, 2, 3, 4, 5]
+
+
+from typing import List, Optional
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
 
-class Solution:
+## Solution1
+class Solution1:
     def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         result = []
         if root == None:
@@ -15,7 +26,9 @@ class Solution:
         result.extend(self.postorderTraversal(root.right))
         result.append(root.val)
         return result
-class Solution:
+
+## Solution2
+class Solution2:
     def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         if not root:
             return []
