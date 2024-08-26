@@ -1,0 +1,149 @@
+Online programming event
+https://icpc.global/
+
+https://www.resurchify.com/e/all-events/artificial-intelligence/all-countries/all-years/page/1/
+
+Puzzle sheet
+https://docs.google.com/spreadsheets/u/0/d/1zQs62-IO43qGzf83FIKtuxTUBDGI3d4qLXpO426z-vg/htmlview#gid=0
+
+DSA sheet
+https://docs.google.com/spreadsheets/u/0/d/1Pud-vdSPhhljScynHvTUGRE5yxEV6dCMb45rOwoSt_Q/htmlview#gid=0
+
+Google interview
+https://www.linkedin.com/posts/ankit5999_40-google-interview-questions-answers-ugcPost-7048149561621495808-EA1N
+
+ML RoadMap
+https://whimsical.com/machine-learning-roadmap-by-ayush-singh-newera-J1EwnqAPUtF77ejgbRc8Hk
+
+Oops best question
+https://www.mygreatlearning.com/blog/oops-interview-questions/
+
+Open source cafe 
+https://youtube.com/playlist?list=PLmXLFH8zc40jtj5sgvVMTfONwP4wpc2Gr
+
+DSA 
+https://youtube.com/playlist?list=PLrk5tgtnMN6TYBW0-U4YhIRyYEVpqVEnJ
+
+DSA ROadmap
+https://www.geeksforgeeks.org/data-structures/
+
+https://www.geeksforgeeks.org/introduction-to-data-structures/
+
+https://www.geeksforgeeks.org/what-is-data-structure-types-classifications-and-applications/
+
+https://www.geeksforgeeks.org/what-is-array/
+
+https://www.geeksforgeeks.org/introduction-to-arrays-data-structure-and-algorithm-tutorials
+
+
+Toturial:
+https://www.youtube.com/playlist?list=PLeo1K3hjS3uu_n_a__MI_KktGTLYopZ12
+
+https://www.youtube.com/playlist?list=PLeo1K3hjS3uu_n_a__MI_KktGTLYopZ12
+
+One shot:
+https://youtu.be/pkYVOmU3MgA?si=KC-Y8VCqzLe6oXnZ
+
+
+Number 1: Preparing for Problems Instead of Concepts. A lot of students just try to memorize the solutions of problems without trying to properly understand the underlying concepts. Here are 3 problems on your screen which look quite similar but they have very different solutions, if you do not understand why which algorithm is used, it is quite easy to get confused.
+Number 2: Relying on Solution Videos and Articles too much. Unless you solve a problem on your own, you do not learn much from it. Students who refer to solutions for every other problem start to forget the solutions after a few days. To avoid this, try solving easier problems, learn the concepts before attempting problems, spend more time on every problem and finally, if you still have to see the solution for some problem, make sure to revisit that problem after a few weeks. 
+And the most important one, Number 3: DO NOT RELY ON CRASH COURSES AND DSA SHEETS. There are multiple paid and free courses that claim to teach DSA in barely 3 months. These are good but only if you have only 3 months. Do not waste 3 years thinking that you will prepare in the last three months. This is the biggest mistake that a lot of students make. Remember that placement is a competition against every other student, the earlier you start, the more you will benefit from it. People who take crash courses in the last 2 or 3 months often do not have enough time to properly understand anything and have almost no time to revise anything. Make sure you never end up in that situation, such courses must only be used as a last resort, not as your plan A .
+
+
+https://www.youtube.com/@utkarshgupta9858
+—----------------------------Modules that I often use in competitive programming;----------------------------
+math - Mathematical functions
+itertools - Functions creating iterators for efficient looping
+collections - High-performance container datatypes
+functools
+sys - System-specific parameters and functions ~ Reading all input at once using sys.stdin.read() is fast and very helpful when you are dealing with strict time limits. (especially on judges like Sphere Online Judge (SPOJ) where time limit is same for all languages.)
+bisect - Array bisection algorithm
+operator - Standard operators as functions ~ especially operator.itemgetter
+Some more helpful modules:
+heapq - Heap queue algorithm
+functools - Higher-order functions and operations on callable objects
+decimal - Decimal fixed point and floating point arithmetic
+fractions - Rational numbers
+__future__ - Future statement definitions
+For debugging:
+The Python Profilers
+pprint - Data pretty printer
+For random data generation:
+random - Generate pseudo-random numbers
+I never used re - Regular expression operations in competitive programming (may be once) but it is very helpful to know.
+
+
+Datetime & time, Pathlib, Os, Shutil, threading and multiprocessing
+
+
+What are the top 30 most essential algorithms you must know for competitive programming?
+
+Sorting Algorithms (QuickSort, MergeSort, HeapSort)
+Searching Algorithms (Binary Search, Linear Search)
+Dynamic Programming (Longest Common Subsequence, Longest Increasing Subsequence, 0-1 Knapsack)
+Graph Algorithms (BFS, DFS, Dijkstra's, A*)
+Tree Algorithms (Preorder, Inorder, Postorder traversal, Segment trees)
+Greedy Algorithms (Fractional Knapsack, Activity Selection Problem, Prim's and Kruskal's)
+Backtracking (N-Queens, Sudoku Solver, Rat in a Maze)
+String Algorithms (KMP, Rabin-Karp, Suffix arrays/trees)
+Hashing (Hash tables, Bloom filters)
+Matrix Algorithms (Matrix Multiplication, Strassen's Algorithm)
+Bit Algorithms (Bit manipulation, Count set bits)
+Divide and Conquer (QuickSort, MergeSort, Closest pair of points)
+Depth-First Search (Topological sort, SCCs in graph)
+Breadth-First Search (Shortest path in graph, Minimum Spanning Tree)
+Stacks and Queues (Balanced Parentheses, Stock Span Problem)
+Linked Lists (Reverse a linked list, Merge two sorted linked lists)
+Binary Trees (Construct a binary tree from inorder and preorder/postorder, Symmetric Tree)
+Tries (Search Engine, Spell Checker)
+Heaps (Heap Sort, Kth largest/smallest element in an array)
+Binary Search Trees (Insert, Search, Delete)
+Maximum Subarray (Kadane's Algorithm, Divide and conquer approach)
+Sliding Window (Longest Substring Without Repeating Characters, Minimum Size Subarray Sum)
+Two Pointers (Remove duplicates from sorted array, 3 Sum)
+Memoization (Fibonacci number, Sum of Subsets)
+Recursion (Tower of Hanoi, Nth Fibonacci number)
+Binary Indexed Tree (Range sum query, Point update)
+Segment Tree (Range Minimum/Maximum Query, Point Update)
+Ternary Search (Find minimum in a unimodal function)
+Rollback and Pruning (N-Queens, Sudoku Solver)
+Floyd Warshall Algorithm (All pair shortest path in a weighted graph)
+These algorithms cover the major topics in Competitive Programming and are good starting points for those looking to improve their algorithmic skills. However, it is important to note that these algorithms are not the only ones to know and there are other advanced algorithms and data structures that one can study to improve their skills further.
+
+
+Leetcode Greedy Questions;
+1. Jump Game II
+2. Jump Game
+3. Best Time to Buy and Sell Stock II
+4. Gas Station
+5. Candy
+6. Remove Duplicate Letters
+7. Wiggle Subsequence
+8. Remove K Digits
+9. Queue Reconstruction by Height
+10. Assign Cookies
+11. Can Place Flowers
+12. Task Scheduler
+13. Partition Labels
+14. Reorganize String
+15. Lemonade Change
+16. Score After Flipping Matrix
+17. Advantage Shuffle
+18. Walking Robot Simulation
+19. Boats to Save People
+20. Minimum Add to Make Parentheses Valid
+21. Bag of Tokens
+22. String Without AAA or BBB
+23. Two City Scheduling
+24. Last Stone Weight
+25. Previous Permutation With One Swap
+26. Car Pooling
+27. Minimum Cost to Move Chips to The Same Position
+28. Number of Burgers with No Waste of Ingredients
+29. Group the People Given the Group Size They Belong To
+30. Divide the Array into Sets of K Consecutive Numbers
+31. Reduce Array Size to The Half
+32. Cinema Seat Allocation
+33. Construct K Palindrome Strings
+34. Check If a String Can Break Another String
+

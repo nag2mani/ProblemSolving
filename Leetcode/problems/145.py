@@ -8,7 +8,6 @@
 # list2.extend([4, 5])
 # print(list2)  # Output: [1, 2, 3, 4, 5]
 
-
 from typing import List, Optional
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -28,6 +27,16 @@ class Solution1:
         return result
 
 ## Solution2
+class Solution:
+    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        if root is None:
+            return []
+        result = self.postorderTraversal(root.left)
+        result += self.postorderTraversal(root.right)
+        result += [root.val]
+        return result
+
+## Solution3
 class Solution2:
     def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         if not root:
@@ -42,15 +51,3 @@ class Solution2:
             if curr.right:
                 stack.append(curr.right)
         return ans[::-1]
-
-
-## Solution3
-class Solution:
-    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-        if root is None:
-            return []
-        result = self.postorderTraversal(root.left)
-        result += self.postorderTraversal(root.right)
-        result += [root.val]
-        return result
-
