@@ -43,3 +43,14 @@ class Solution2:
                 stack.append(curr.right)
         return ans[::-1]
 
+
+## Solution3
+class Solution:
+    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        if root is None:
+            return []
+        result = self.postorderTraversal(root.left)
+        result += self.postorderTraversal(root.right)
+        result += [root.val]
+        return result
+
