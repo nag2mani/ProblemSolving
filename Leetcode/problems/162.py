@@ -28,7 +28,7 @@ def findPeakElement(nums) -> int:
     while(low < high):
         mid = low + (high - low) // 2
         if nums[mid] < nums[mid + 1]:
-            #
+            # Although it is not sorted but we have assumed.
             low = mid + 1
         else:
             high = mid
