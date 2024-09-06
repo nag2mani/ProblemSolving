@@ -4,6 +4,9 @@ from typing import List
 
 class Solution:
     def missingRolls(self, rolls: List[int], mean: int, n: int) -> List[int]:
+
+#solution-1(Myself)
+
         #Greedy approach first allot min to all then distribute.
         m = len(rolls)
         s1 = sum(rolls)
@@ -22,6 +25,7 @@ class Solution:
                         return result
         return result
     
+#solution-2(chatgpt)
 
         # m = len(rolls)
         # total_sum = mean * (n + m)
@@ -39,6 +43,7 @@ class Solution:
         #     i += 1
         # return result
 
+#solution-3(top on leetcode)
 
         # m = len(rolls)
         # totalSum = mean * (m + n)
@@ -48,3 +53,7 @@ class Solution:
         #     return []
         # quotient, remainder = divmod(missingSum, n)
         # return [quotient + (1 if i < remainder else 0) for i in range(n)]
+
+
+
+
