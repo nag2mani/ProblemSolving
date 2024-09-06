@@ -52,7 +52,13 @@ class Solution:
         # if missingSum < n or missingSum > 6 * n:
         #     return []
         # quotient, remainder = divmod(missingSum, n)
-        # return [quotient + (1 if i < remainder else 0) for i in range(n)]
+        # result = []
+        # for i in range(n):
+        #     if i < remainder:
+        #         result.append(quotient + 1)
+        #     else:
+        #         result.append(quotient)
+        # return result
 
 
 
