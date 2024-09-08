@@ -59,7 +59,3 @@ class Solution:
         #     else:
         #         result.append(quotient)
         # return result
-
-
-
-
