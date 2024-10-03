@@ -1,0 +1,3 @@
+Q. Given two string check if it is it's permutation.
+-4n
+-delete it if count 0.
